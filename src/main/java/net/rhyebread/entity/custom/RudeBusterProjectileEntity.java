@@ -3,17 +3,16 @@ package net.rhyebread.entity.custom;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.projectile.ThrowableItemProjectile;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.EntityHitResult;
 import net.minecraft.world.phys.Vec2;
-import net.minecraftforge.fml.common.Mod;
 import net.rhyebread.deltatale.item.ModItems;
+import net.rhyebread.deltatale.sound.ModSounds;
 import net.rhyebread.entity.ModEntities;
+import org.jetbrains.annotations.NotNull;
 
 public class RudeBusterProjectileEntity extends ThrowableItemProjectile {
     private float rotation;
@@ -32,28 +31,20 @@ public class RudeBusterProjectileEntity extends ThrowableItemProjectile {
         super(ModEntities.RUDE_BUSTER_PROJECTILE.get(), level);
     }
 
-    public RudeBusterProjectileEntity(LivingEntity shooter, Level level){
+    public RudeBusterProjectileEntity(Level level, LivingEntity shooter){
         super(ModEntities.RUDE_BUSTER_PROJECTILE.get(), shooter, level);
     }
-
-    public float getRenderingRotation(){
-        rotation += 0.5f;
-        if(rotation >= 360){
-            rotation = 0;
-        }
-        return rotation;
-    }
-
-
 
     @Override
     protected void onHitEntity(EntityHitResult pResult) {
         super.onHitEntity(pResult);
         Entity entity = pResult.getEntity();
-        entity.hurt(this.damageSources().thrown(this, this.getOwner()), 4);
+        entity.hurt(this.damageSources().thrown(this, this.getOwner()), 10);
+        this.playSound(ModSounds.RUDE_AXE_HIT.get(), 1f, 1f);
 
         if (!this.level().isClientSide()){
             this.level().broadcastEntityEvent(this, (byte) 3);
+            this.discard();
         }
     }
 
@@ -61,6 +52,8 @@ public class RudeBusterProjectileEntity extends ThrowableItemProjectile {
     protected void onHitBlock(BlockHitResult pResult) {
         if(!this.level().isClientSide()){
             this.level().broadcastEntityEvent(this, (byte) 3);
+            this.playSound(ModSounds.RUDE_AXE_HIT.get(), 1f, 1f);
+            this.discard();
         }
         super.onHitBlock(pResult);
     }

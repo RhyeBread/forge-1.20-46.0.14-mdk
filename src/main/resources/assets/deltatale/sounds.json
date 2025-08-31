@@ -116,5 +116,18 @@
       "deltatale:cave_sound_4",
       "deltatale:cave_sound_5"
     ]
+  },
+  "rude_axe_use": {
+    "subtitle": "Rude Buster Fired",
+    "sounds": [
+      "deltatale:rude_axe_use"
+    ]
+  },
+
+  "rude_axe_hit": {
+    "subtitle": "Rude Buster Hit",
+    "sounds": [
+      "deltatale:rude_axe_hit"
+    ]
   }
 }
