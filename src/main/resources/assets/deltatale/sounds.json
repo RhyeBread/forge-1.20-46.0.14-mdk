@@ -1,0 +1,120 @@
+{
+  "wither_boss_music": {
+    "subtitle": "sounds.deltatale.wither_boss_music",
+    "sound": [
+      "deltatale:wither_boss_music"
+    ]
+  },
+
+  "dragon_boss_music": {
+    "subtitles": "sounds.deltatale.dragon_boss_music",
+    "sounds": [
+      "deltatale:dragon_boss_music"
+    ]
+  },
+
+  "warden_boss_music": {
+    "subtitle": "sounds.deltatale.warden_boss_music",
+    "sounds": [
+      "deltatale:warden_boss_music"
+    ]
+  },
+
+  "fight_music": {
+    "subtitle": "sounds.deltatale.fight_music",
+    "sounds": [
+      "deltatale:fight_music"
+    ]
+  },
+
+  "fight_low_health_music": {
+    "subtitle": "sounds.deltatale.fight_low_health_music",
+    "sounds": [
+      "deltatale:fight_low_health_music"
+    ]
+  },
+
+  "soulsand_valley_biome_music": {
+    "subtitle": "sounds.deltatale.soulsand_valley_biome_music",
+    "sounds": [
+      "deltatale:soulsand_valley_biome_music"
+    ]
+  },
+
+  "snow_biome_music": {
+    "subtitle": "sounds.deltatale.snow_biome_music",
+    "sounds": [
+      "deltatale:snow_biome_music"
+    ]
+  },
+
+  "mountains_biome_music": {
+    "subtitle": "sounds.deltatale.mountains_biome_music",
+    "sounds": [
+      "deltatale:mountains_biome_music"
+    ]
+  },
+
+  "basalt_deltas_biome_music": {
+    "subtitle": "sounds.deltatale.basalt_deltas_biome_music",
+    "sounds": [
+      "deltatale:basalt_deltas_biome_music"
+    ]
+  },
+
+  "plains_biome_music": {
+    "subtitle": "sounds.deltatale.plains_biome_music",
+    "sounds": [
+      "deltatale:plains_biome_music"
+    ]
+  },
+
+  "weird_route_start": {
+    "subtitle": "Weird Route Start",
+    "sounds": [
+      {
+        "name" : "deltatale:weird_route_start",
+        "stream": true
+      }
+    ]
+  },
+
+  "weird_route_cancel": {
+    "subtitle": "Weird Route Cancel",
+    "sounds": [
+      "deltatale:weird_route_cancel"
+    ]
+  },
+
+  "weird_route_worsen": {
+    "subtitle": "Irrevocable Route",
+    "sounds": [
+      "deltatale:weird_route_worsen"
+    ]
+  },
+
+  "weird_route_damage": {
+    "subtitle": "Hurt Heart",
+    "sounds": [
+      "deltatale:weird_route_damage"
+    ]
+  },
+
+  "weird_route_cave": {
+    "subtitle": "Shhh...",
+    "sounds": [
+      "deltatale:weird_route_cave"
+    ]
+  },
+
+  "cave_sounds": {
+    "subtitle": "Mysterious Ringing",
+    "sounds": [
+      "deltatale:cave_sound_1",
+      "deltatale:cave_sound_2",
+      "deltatale:cave_sound_3",
+      "deltatale:cave_sound_4",
+      "deltatale:cave_sound_5"
+    ]
+  }
+}
