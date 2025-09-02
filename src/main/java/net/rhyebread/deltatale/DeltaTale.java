@@ -76,6 +76,7 @@ public class DeltaTale
         public static void onClientSetup(FMLClientSetupEvent event)
         {
             EntityRenderers.register(ModEntities.RUDE_BUSTER_PROJECTILE.get(), ThrownItemRenderer::new);
+            EntityRenderers.register(ModEntities.DEVILSKNIFE_PROJECTILE.get(), ThrownItemRenderer::new);
         }
     }
 }

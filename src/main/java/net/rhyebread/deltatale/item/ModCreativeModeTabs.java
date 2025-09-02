@@ -25,7 +25,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.SNOWGRAVE.get());
                         output.accept(ModItems.SHADOW_CRYSTAL.get());
                         output.accept(ModItems.DELTARUNE.get());
-                        output.accept(ModItems.RUDE_AXE.get());
+                        output.accept(ModItems.RUDEAXE.get());
+                        output.accept(ModItems.DEVILSKNIFE.get());
                     })
                     .build());
 

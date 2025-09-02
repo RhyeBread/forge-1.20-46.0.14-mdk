@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "deltatale:item/weirdroute"
+    "layer0": "deltatale:item/devils_knife"
   }
 }

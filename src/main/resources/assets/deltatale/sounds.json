@@ -129,5 +129,19 @@
     "sounds": [
       "deltatale:rude_axe_hit"
     ]
+  },
+
+  "devils_knife": {
+    "subtitle": "DevilsKnife Burst",
+    "sounds": [
+      "deltatale:scytheburst"
+    ]
+  },
+
+  "hurts": {
+    "subtitle" : "Entity Hurt",
+    "sounds": [
+      "deltatale:miss"
+    ]
   }
 }

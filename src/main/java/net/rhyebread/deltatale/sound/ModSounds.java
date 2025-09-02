@@ -20,6 +20,8 @@ public class ModSounds {
 
     public static final RegistryObject<SoundEvent> RUDE_AXE_HIT = registerSoundEvents("rude_axe_hit");
     public static final RegistryObject<SoundEvent> RUDE_AXE_USE = registerSoundEvents("rude_axe_use");
+    public static final RegistryObject<SoundEvent> DEVILSKNIFE_USE = registerSoundEvents("devils_knife");
+    public static final RegistryObject<SoundEvent> HURT = registerSoundEvents("hurts");
 
     public static final RegistryObject<SoundEvent> CAVE_SOUND_1 = registerSoundEvents("cave_sound_1");
     public static final RegistryObject<SoundEvent> CAVE_SOUND_2 = registerSoundEvents("cave_sound_2");
@@ -54,6 +56,5 @@ public class ModSounds {
 
     public static void register(IEventBus eventBus){
         SOUND_EVENTS.register(eventBus);
-
     }
 }
