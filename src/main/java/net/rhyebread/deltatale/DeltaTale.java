@@ -1,10 +1,8 @@
 package net.rhyebread.deltatale;
 
 import com.mojang.logging.LogUtils;
-import net.minecraft.client.renderer.entity.EntityRenderer;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
-import net.minecraft.world.entity.projectile.ThrowableItemProjectile;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -16,10 +14,10 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.rhyebread.deltatale.block.custom.ModBlocks;
 import net.rhyebread.deltatale.item.ModCreativeModeTabs;
 import net.rhyebread.deltatale.item.ModItems;
 import net.rhyebread.deltatale.sound.ModSounds;
-import net.rhyebread.deltatale.util.ModTags;
 import net.rhyebread.entity.ModEntities;
 import org.slf4j.Logger;
 
@@ -39,6 +37,7 @@ public class DeltaTale
 
         ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

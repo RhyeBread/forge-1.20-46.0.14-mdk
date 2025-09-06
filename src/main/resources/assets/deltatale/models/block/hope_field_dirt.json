@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "deltatale:block/field_had_dirt"
+  }
+
+}

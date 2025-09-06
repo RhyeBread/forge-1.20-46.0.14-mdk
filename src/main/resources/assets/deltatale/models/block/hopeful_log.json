@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "end": "deltatale:block/hopeful_wood_top",
+    "side": "deltatale:block/hopeful_wood_side"
+  }
+
+}

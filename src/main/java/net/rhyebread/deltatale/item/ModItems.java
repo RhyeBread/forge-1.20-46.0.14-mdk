@@ -7,9 +7,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.rhyebread.deltatale.DeltaTale;
-import net.rhyebread.deltatale.item.custom.DevilsKnifeItem;
-import net.rhyebread.deltatale.item.custom.RudeAxeItem;
-import net.rhyebread.deltatale.item.custom.Spade;
+import net.rhyebread.deltatale.item.custom.*;
 
 import static net.minecraft.world.item.Item.*;
 
@@ -29,11 +27,11 @@ public class ModItems {
     public static final RegistryObject<Item> DELTARUNE = ITEMS.register("deltarune",
             () -> new Item(new Properties().stacksTo(1)));
 
-    public static final RegistryObject<Item> RUDEAXE = ITEMS.register("rude_axe",
-            () -> new RudeAxeItem(new Properties().durability(200)));
+    public static final RegistryObject<AxeItem> RUDEAXE = ITEMS.register("rude_axe",
+            () -> new RudeAxeItem(Tiers.DIAMOND, 8, -2.4f, (new Properties().durability(100))));
 
     public static final RegistryObject<Item> RUDE_BUSTER_USE = ITEMS.register("rude_buster_use",
-            () -> new RudeAxeItem(new Properties()));
+            () -> new RudeAxeItem(Tiers.DIAMOND, 8, -2.4f, (new Properties().durability(100))));
 
     public static final RegistryObject<Item> SPADE = ITEMS.register("spade",
             () -> new DevilsKnifeItem(new Properties()));
@@ -43,6 +41,15 @@ public class ModItems {
 
     public static final RegistryObject<Item> DEVILSKNIFE = ITEMS.register("devils_knife",
             () -> new DevilsKnifeItem(new Properties()));
+
+    public static final RegistryObject<Item> THORN_RING = ITEMS.register("thorn_ring",
+            () -> new ThornRingItem(new Properties()));
+
+    public static final RegistryObject<Item> ICE_RING = ITEMS.register("ice_ring",
+            () -> new IceRingItem(new Properties()));
+
+    public static final RegistryObject<HoeItem> REDDEVILSKNIFE = ITEMS.register("red_devils_knife",
+            () -> new RedDevilsKnifeItem(Tiers.DIAMOND, 8, -2.4f, (new Properties().durability(100))));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

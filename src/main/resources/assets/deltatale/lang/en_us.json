@@ -5,5 +5,18 @@
   "item.deltatale.shadow_crystal": "Shadow Crystal",
   "item.deltatale.deltarune": "Deltarune",
   "item.deltatale.rude_axe": "Rude Axe",
-  "item.deltatale.devils_knife": "DevilsKnife"
+  "item.deltatale.devils_knife": "DevilsKnife",
+  "item.deltatale.thorn_ring": "Thorn Ring",
+  "item.deltatale.red_devils_knife": "Red DevilsKnife",
+
+  "block.deltatale.hope_field_grass": "Field Grass",
+  "block.deltatale.hope_field_dirt": "Field Dirt",
+
+  "block.deltatale.hopeful_log": "Hopeful Log",
+  "block.deltatale.hopeful_wood": "Hopeful Wood",
+  "block.deltatale.hopeful_planks": "Hopeful Planks",
+  "block.deltatale.stripped_hopeful_log": "Ever Hopeful Log",
+  "block.deltatale.stripped_hopeful_wood": "Ever Hopeful Wood",
+
+  "block.deltatale.dreamy_leaves": "Dreamy Leaves"
 }

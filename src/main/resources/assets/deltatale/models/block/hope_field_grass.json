@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "deltatale:block/field_had_grass_bottom",
+    "up": "deltatale:block/field_had_grass_top",
+    "north": "deltatale:block/field_had_grass1",
+    "south": "deltatale:block/field_had_grass3",
+    "west": "deltatale:block/field_had_grass4",
+    "east": "deltatale:block/field_had_grass2"
+
+  }
+
+}
